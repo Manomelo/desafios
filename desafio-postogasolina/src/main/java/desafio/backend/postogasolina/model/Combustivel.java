@@ -11,15 +11,16 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "combustivel")
 public class Combustivel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "nome")
     private String nome;
 
-    @Column(nullable = false)
-    private Double precoLitro;
+    @Column(nullable = false, name = "precoLitro")
+    private double precoLitro;
 }
