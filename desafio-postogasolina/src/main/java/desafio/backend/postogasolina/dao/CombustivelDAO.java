@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 import java.util.Optional;
 
-@NoArgsConstructor
 @AllArgsConstructor
 public class CombustivelDAO {
 

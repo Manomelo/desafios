@@ -21,7 +21,7 @@ public class Bomba {
     private Long id;
 
     @Column(name = "nome")
-    private String name;
+    private String nome;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "combustivel_id", nullable = false)
